@@ -40,7 +40,11 @@ class Decryptor < Encryptor
 end
 
 e = Encryptor.new
-puts e.encrypt("hello World")
+puts "Enter the word to be encrypted"
+data = gets.chomp
+puts e.encrypt(data)
 
 d = Decryptor.new
-puts d.decrypt("uryybjbeyq")
+puts "Enter the word to be decrypted"
+data = gets.chomp
+puts d.decrypt(data)
